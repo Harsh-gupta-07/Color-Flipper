@@ -1,6 +1,8 @@
 let header =  document.getElementById("color")
 let colorcode = document.getElementById("Changecolorcode")
 
+
+
 function changecol(){
    if(colorcode.value == "rgb"){
         colorrgb();
@@ -12,13 +14,19 @@ function changecol(){
    }
 }
 
+
+
 function randomcolor(){
     return  Math.floor(Math.random()*256)
 }
 
+
+
 function randomopacity(){
     return Math.random().toFixed(2)
 }
+
+
 
 function colorrgb(){
     document.querySelector("div").style.width = "600px"
@@ -28,6 +36,8 @@ function colorrgb(){
     document.querySelector("body").style.backgroundColor = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`
 }
 
+
+
 function colorhex(){
     document.querySelector("div").style.width = "600px"
     let rgb = [converthex(), converthex(),converthex()]
@@ -35,6 +45,8 @@ function colorhex(){
     document.querySelector("body").style.backgroundColor = `#${rgb[0]}${rgb[1]}${rgb[1]}`
     header.innerText= `Current Color: #${rgb[0]}${rgb[1]}${rgb[1]}`
 }
+
+
 
 function converthex(){
     let n= randomcolor()
@@ -54,6 +66,7 @@ function converthex(){
     }
     return temp
 }
+
 
 
 function colorrgba(){
