@@ -16,9 +16,9 @@
     <div>
         <h1 id="color">Current Color: rgb(0, 0, 0)</h1>
         <button onclick="changecol()">Change Color</button> 
-        <select id="Changecolorcode">
-            <option value="rgb" >RGB</option>
-            <option value="hex" >Hex Code</option>
+        <select id="Changecolorcode" onchange="changecol()">
+            <option value="rgb">RGB</option>
+            <option value="hex">Hex Code</option>
             <option value="rgba">RGBA</option>
         </select>
     </div>
